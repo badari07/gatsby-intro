@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Java Systems`,
+    description: ` Java Systemsis established in 2007. Java Systems is established by experienced professionals in Telecommunication. We are committed towards building a trusted partnership with our customers offering wide section of products and services in Communication, Surveillance and Board Room solution and Office Automation.
+    `,
+    author: `badari-narayan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +16,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
